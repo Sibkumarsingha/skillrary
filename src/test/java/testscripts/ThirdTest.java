@@ -20,7 +20,7 @@ public void thirdTest() throws Exception
 	javaVideo.closepopUp();
 	web.switchToFrame();
 	javaVideo.clickPlayButton();
-	Thread.sleep(20000);
+	//Thread.sleep(2000);
 	javaVideo.clickPauseButton();
 	web.switchBackFromFrame();
 	javaVideo.clickWishList();
