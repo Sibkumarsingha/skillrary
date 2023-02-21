@@ -119,7 +119,7 @@ public void switchToParentwindow() {
 public void scrollToElement(WebElement element) {
 	JavascriptExecutor js=(JavascriptExecutor) driver;
 	js.executeScript("window.scrollTo(0,document.body.ScrollHeight)");
-	//js.executeScript("argument[0].scrollIntoview(true)", element);
+	//js.executeScript("arguments[0].scrollIntoview(true)", element);
 	System.out.println("hello");
 }
 
