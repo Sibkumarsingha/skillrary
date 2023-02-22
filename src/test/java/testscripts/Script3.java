@@ -13,9 +13,9 @@ public class Script3 extends BaseClass {
 	public void thirdTest()
 	{
 		SoftAssert soft = new SoftAssert();
-		WebElement elem= driver.findElement(By.xpath("//input[@name='q']"));
-		web.explicitwait(time,elem );
-		home.searchFor("core java for selenium");
+		//WebElement elem= driver.findElement(By.xpath("//input[@name='q']"));
+		//web.explicitwait(time,elem );
+		home.search_in("core java for selenium",driver);
 		soft.assertTrue(coreJava.getPageHeader().isDisplayed());
 		coreJava.clickCoreJavaForSeleniumLink();
 		soft.assertTrue(selenium.getPageHeader().isDisplayed());

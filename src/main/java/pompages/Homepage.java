@@ -1,11 +1,14 @@
 package pompages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Homepage {
+import genericLibrary.BaseClass;
+
+public class Homepage extends BaseClass {
 
 	//Declaration
 	@FindBy(xpath="//img[@alt='SkillRary']")
@@ -39,6 +42,13 @@ public class Homepage {
 	{
 		searchTF.click();
 		searchTF.sendKeys(data);
+		searchButton.click();
+	}
+	public void search_in(String data,WebDriver driver)
+	{
+		WebElement myElement = searchTF;
+		String js = "arguments[0].setAttribute('value','"+data+"')";
+		((JavascriptExecutor) driver).executeScript(js, myElement);
 		searchButton.click();
 	}
 	
