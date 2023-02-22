@@ -49,7 +49,11 @@ public class Homepage extends BaseClass {
 		WebElement myElement = searchTF;
 		String js = "arguments[0].setAttribute('value','"+data+"')";
 		((JavascriptExecutor) driver).executeScript(js, myElement);
-		searchButton.click();
+	
+		
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", searchButton);
+		
+
 	}
 	
 	public void clickGears()
