@@ -5,8 +5,8 @@
     <classes>
       <class name="testscripts.SecondTest"/>
       <class name="testscripts.fourthTest"/>
+      <class name="testscripts.Script3"/>
       <class name="testscripts.FirstTest"/>
-      <class name="textscripts.Scripts"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
