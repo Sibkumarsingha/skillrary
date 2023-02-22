@@ -37,6 +37,7 @@ public class Homepage {
 	
 	public void searchFor(String data)
 	{
+		searchTF.click();
 		searchTF.sendKeys(data);
 		searchButton.click();
 	}
