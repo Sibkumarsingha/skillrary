@@ -16,10 +16,11 @@ public class Script3 extends BaseClass {
 		coreJava.clickCoreJavaForSeleniumLink();
 		soft.assertTrue(selenium.getPageHeader().isDisplayed());
 	   
-		web.handleAlert();
 		
-		web.switchToFrame();
+		//web.handleAlert();
 		javaVideo.closepopUp();
+		web.switchToFrame();
+	
 		javaVideo.clickPlayButton();
 		javaVideo.clickPauseButton();
 		web.switchBackFromFrame();

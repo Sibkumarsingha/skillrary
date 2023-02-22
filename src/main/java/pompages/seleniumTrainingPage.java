@@ -10,7 +10,7 @@ import genericLibrary.WebDriverUtility;
 public class seleniumTrainingPage {
 //Declaration
 	
-	@FindBy(xpath="//h1[@class='page-header']")
+	@FindBy(xpath="//h1")
 	private WebElement pageHeader;
 	
 	@FindBy(id="add")
