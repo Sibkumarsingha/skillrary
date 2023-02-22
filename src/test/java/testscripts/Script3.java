@@ -1,5 +1,7 @@
 package testscripts;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -8,10 +10,11 @@ import genericLibrary.BaseClass;
 public class Script3 extends BaseClass {
 	
 	@Test
-	public void thirdTest() throws InterruptedException
+	public void thirdTest()
 	{
 		SoftAssert soft = new SoftAssert();
-		Thread.sleep(4000);
+		WebElement elem= driver.findElement(By.xpath("//input[@name='q']"));
+		web.explicitwait(time,elem );
 		home.searchFor("core java for selenium");
 		soft.assertTrue(coreJava.getPageHeader().isDisplayed());
 		coreJava.clickCoreJavaForSeleniumLink();
