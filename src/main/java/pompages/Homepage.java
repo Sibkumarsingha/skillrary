@@ -11,7 +11,7 @@ public class Homepage {
 	@FindBy(xpath="//img[@alt='SkillRary']")
 	private WebElement logo;
 	
-	@FindBy(name="q")
+	@FindBy(xpath="//form[@action='https://skillrary.com/search']/input[@name='q']")
 	private WebElement searchTF;
 	
 	@FindBy(xpath="//input[@value='go']")
