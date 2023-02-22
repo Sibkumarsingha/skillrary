@@ -8,9 +8,10 @@ import genericLibrary.BaseClass;
 public class Script3 extends BaseClass {
 	
 	@Test
-	public void thirdTest()
+	public void thirdTest() throws InterruptedException
 	{
 		SoftAssert soft = new SoftAssert();
+		Thread.sleep(4000);
 		home.searchFor("core java for selenium");
 		soft.assertTrue(coreJava.getPageHeader().isDisplayed());
 		coreJava.clickCoreJavaForSeleniumLink();
